@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pagal Music</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="../static/logo.png" alt="Pagal Music">Pagal Music</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Jubin Nautiyal</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="../static/cover/1.jpg" alt="1">
+                    <span class="songName">Kinna Sona</span>
+                    <span class="timeStamp">04:34</span>
+                    <span class="songListPlay"><img id="0" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/2.jpg" alt="2">
+                    <span class="songName">Tujhe Kitna Chahein Aur</span>
+                    <span class="timeStamp">04:36</span>
+                    <span class="songListPlay"><img id="1" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/3.jpg" alt="3">
+                    <span class="songName">Taaron Ke Shehar</span>
+                    <span class="timeStamp">03:50</span>
+                    <span class="songListPlay"><img id="2" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/4.jpg" alt="4">
+                    <span class="songName">Meri Aashiqui</span>
+                    <span class="timeStamp">04:40</span>
+                    <span class="songListPlay"><img id="3" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/5.jpg" alt="5">
+                    <span class="songName">Dil Chahte Ho</span>
+                    <span class="timeStamp">04:12</span>
+                    <span class="songListPlay"><img id="4" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/6.jpg" alt="6">
+                    <span class="songName">Chitthi</span>
+                    <span class="timeStamp">03:50</span>
+                    <span class="songListPlay"><img id="5" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/7.jpg" alt="7">
+                    <span class="songName">Lo Safar</span>
+                    <span class="timeStamp">04:42</span>
+                    <span class="songListPlay"><img id="6" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/8.jpg" alt="8">
+                    <span class="songName">Tum Hi Aana</span>
+                    <span class="timeStamp">04:09</span>
+                    <span class="songListPlay"><img id="7" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/9.jpg" alt="9">
+                    <span class="songName">Akh Lad Jaave</span>
+                    <span class="timeStamp">03:00</span>
+                    <span class="songListPlay"><img id="8" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+                <div class="songItem">
+                    <img src="../static/cover/10.jpg" alt="10">
+                    <span class="songName">Nayan</span>
+                    <span class="timeStamp">04:15</span>
+                    <span class="songListPlay"><img id="9" class="play" src="../static/circle-play-solid.svg" alt="Play"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <img src="../static/backward-solid.svg" alt="backward" id="previous">
+            <img src="../static/circle-play-solid.svg" alt="play" id="masterPlay">
+            <img src="../static/forward-solid.svg" alt="forward" id="next">
+        </div>
+        <div class="songInfo">
+            <img src="../static/playing.gif" width="42px" alt="" id="gif">
+            <span class="masterSongName">Kinna Sona</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
