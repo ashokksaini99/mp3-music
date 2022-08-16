@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.brand img{
+    width: 45px;
+    margin-left: 20px;
+}
+
+a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    background-image: url(../static/background.jpg);
+    background-position: center;
+    padding: 34px;
+    margin: 23px auto;
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0 23px;
+    border-radius: 30px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px;
+    align-items: center;
+    border-radius: 34px;
+}
