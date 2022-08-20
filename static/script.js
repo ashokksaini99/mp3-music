@@ -18,9 +18,9 @@ let songs = [
     { songName: "Akh Lad Jaave", filePath: "../static/songs/9.mp3", coverPath: "../static/covers/9.jpg" },
     { songName: "Nayan", filePath: "../static/songs/10.mp3", coverPath: "../static/covers/10.jpg" },
 ]
-songItems.forEach((element, i)=>{ 
-    element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
-    element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
+songItems.forEach((element, i) => {
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
 })
 // Handle play/pause click
 masterPlay.addEventListener('click', () => {
@@ -48,20 +48,20 @@ progressBar.addEventListener('change', () => {
     audioElement.currentTime = progressBar.value * audioElement.duration / 100;
 })
 
-const makeAllPlays = ()=>{
-    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+const makeAllPlays = () => {
+    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
         element.classList.remove('fa-pause');
         element.classList.add('fa-play');
     })
 }
 
-Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-    element.addEventListener('click', (e)=>{ 
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
+    element.addEventListener('click', (e) => {
         makeAllPlays();
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play');
         e.target.classList.add('fa-pause');
-        audioElement.src = `../static/songs/${songIndex+1}.mp3`;
+        audioElement.src = `../static/songs/${songIndex + 1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();

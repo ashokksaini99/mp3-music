@@ -73,12 +73,17 @@ h1 {
 }
 
 .timeStamp {
-    margin: 0 25px;
+    margin-left: 50px;
 }
 
 .timeStamp i {
     cursor: pointer;
     margin-left: 10px;
+}
+
+.songItem i {
+    color: black;
+    margin-right: 20px;
 }
 
 .bottom {
