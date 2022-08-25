@@ -1,10 +1,10 @@
 let songIndex = 0;
 let audioElement = new Audio('../static/songs/1.mp3');
-let masterPlay = document.getElementById('masterPlay');
-let progressBar = document.getElementById('progressBar');
-let gif = document.getElementById('gif');
-let masterSongName = document.getElementById('masterSongName');
-let songItems = Array.from(document.getElementsByClassName('songItem'));
+let masterPlay = $('#masterPlay')[0];
+let progressBar = $('#progressBar')[0];
+let gif = $('#gif')[0];
+let masterSongName = $('#masterSongName')[0];
+let songItems = Array.from($('.songItem'));
 
 let songs = [
     { songName: "Kinna Sona", filePath: "../static/songs/1.mp3", coverPath: "../static/covers/1.jpg" },
@@ -49,13 +49,13 @@ progressBar.addEventListener('change', () => {
 })
 
 const makeAllPlays = () => {
-    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
+    Array.from($('.songItemPlay')).forEach((element) => {
         element.classList.remove('fa-pause');
         element.classList.add('fa-play');
     })
 }
 
-Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
+Array.from($('.songItemPlay')).forEach((element) => {
     element.addEventListener('click', (e) => {
         makeAllPlays();
         songIndex = parseInt(e.target.id);
@@ -72,7 +72,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
 })
 
 
-document.getElementById('next').addEventListener('click', () => {
+$('#next')[0].addEventListener('click', () => {
     if (songIndex >= 9) {
         songIndex = 0
     }
@@ -89,7 +89,7 @@ document.getElementById('next').addEventListener('click', () => {
 
 })
 
-document.getElementById('previous').addEventListener('click', () => {
+$('#previous')[0].addEventListener('click', () => {
     if (songIndex <= 0) {
         songIndex = 9
     }
