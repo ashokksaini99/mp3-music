@@ -2,9 +2,9 @@
   "name": "mp3-music",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "node app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "app.js"
   },
   "author": "",
   "license": "ISC",
