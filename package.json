@@ -2,7 +2,7 @@
   "name": "mp3-music",
   "version": "1.0.0",
   "description": "",
-  "main": "node app.js",
+  "main": "app.js",
   "scripts": {
     "start": "app.js"
   },
